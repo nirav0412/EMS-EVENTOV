@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    height: 100vh;
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@ body{
     transition: opacity 0.2s ease;
 }
 .container.active .forms{
-    height: 600px;
+    height: max-content;
 }
 .container .form .title{
     position: relative;
@@ -69,7 +69,7 @@ body{
 }
 .form .input-field{
     position: relative;
-    height: 50px;
+    height: 32px;
     width: 100%;
     margin-top: 30px;
 }
@@ -86,7 +86,7 @@ body{
     transition: all 0.2s ease;
 }
 .input-field input:is(:focus, :valid){
-    border-bottom-color: #4070f4;
+    border-bottom-color: #35b5ab;
 }
 .input-field i{
     position: absolute;
@@ -97,7 +97,7 @@ body{
     transition: all 0.2s ease;
 }
 .input-field input:is(:focus, :valid) ~ i{
-    color: #4070f4;
+    color: #35b5ab;
 }
 .input-field i.icon{
     left: 0;
@@ -119,14 +119,14 @@ body{
 }
 .checkbox-content input{
     margin-right: 10px;
-    accent-color: #4070f4;
+    accent-color: #35b5ab;
 }
 .form .text{
     color: #333;
     font-size: 14px;
 }
 .form a.text{
-    color: #4070f4;
+    color: #35b5ab;
     text-decoration: none;
 }
 .form a:hover{
@@ -153,4 +153,31 @@ body{
 .form .login-signup{
     margin-top: 10px;
     text-align: center;
+}
+
+.sign-up-g:before {
+    content: "";
+    display: block;
+    width: 138px;
+    height: 1px;
+    background: #191970;
+    left: 10%;
+    top: 15%;
+    position: absolute;
+  }
+  .sign-up-g:after {
+    content: "";
+    display: block;
+    width: 153px;
+    height: 1px;
+    background: #191970;
+    right: 8%;
+    top: 15%;
+    position: absolute;
+  }
+
+  .input-field .monum::-webkit-outer-spin-button,
+.input-field .monum::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
